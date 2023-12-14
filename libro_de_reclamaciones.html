@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones - Transportes Lorem Ipsum</title>
+    <link rel="stylesheet" href="navegador.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <div class="logo-container">
+            <img src="LOGO.jpg" alt="Lorem Ipsum" class="logo">
+        </div>
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="https://accounts.google.com/v3/signin/identifier?hl=es&ifkv=AVQVeyx1UikRy6D2RcE2vFDoWfoA1q3jQpMeK8AogTpC9JC3maeKESIqC3idKKFavy6TVRBkDHrsOw&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1376026195%3A1697268871453124&theme=glif">Inicio</a></li>
+                <li><a href="https://transa.com.pe/nosotros/">Nosotros</a></li>
+                <li><a href="https://www.teletrans.com/es/transporte-de-pasajeros-lima-peru/">Servicios</a></li>
+                <li><a href="https://www.redbus.pe/info/sobre-nosotros">Destinos</a></li>
+                <li><a href="https://blog.redbus.pe/turismo-aventura/terminales-de-buses-de-lima/">Agencias</a></li>
+                <li><a href="https://transa.com.pe/contacto/">Contactos</a></li>
+                <button onclick="recargarpagina()">Verificar Red</button>
+            </ul>
+        </nav>
+    </header>
+
+<h1>Libro de Reclamaciones - Transportes Cruz del Sur</h1>
+
+<form action="#" method="post">
+    <h2>Datos del Reclamo</h2>
+
+    <label for="numeroReclamo">Número de Reclamo:</label>
+    <input type="text" id="numeroReclamo" name="numeroReclamo" readonly value="100-145550-2023">
+
+    <label for="fechaReclamo">Fecha de Reclamo:</label>
+    <input type="text" id="fechaReclamo" name="fechaReclamo" readonly value="14/12/2023">
+
+    <h2>Identificación del Consumidor Reclamante</h2>
+
+    <label for="documentoIdentidad">Documento de Identidad:</label>
+    <input type="text" id="documentoIdentidad" name="documentoIdentidad">
+
+    <label for="nombres">Nombres:</label>
+    <input type="text" id="nombres" name="nombres">
+
+    <label for="apellidoPaterno">Apellido Paterno:</label>
+    <input type="text" id="apellidoPaterno" name="apellidoPaterno">
+
+    <label for="apellidoMaterno">Apellido Materno:</label>
+    <input type="text" id="apellidoMaterno" name="apellidoMaterno">
+
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" name="direccion">
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono">
+
+    <label for="celular">Celular:</label>
+    <input type="tel" id="celular" name="celular">
+
+    <label for="fax">Fax:</label>
+    <input type="tel" id="fax" name="fax">
+
+    <label for="padreMadre">Padre o madre (en caso de ser menor de edad):</label>
+    <input type="text" id="padreMadre" name="padreMadre">
+
+    <h2>Ruta del Viaje</h2>
+
+    <label for="rutaViaje">Ruta del viaje:</label>
+    <input type="text" id="rutaViaje" name="rutaViaje">
+
+    <h2>Identificación del Bien Contratado</h2>
+
+    <label for="bienServicio">Elija el bien o servicio sobre el que desea realizar su reclamo:</label>
+    <select id="bienServicio" name="bienServicio">
+        <option value="producto">Producto</option>
+        <option value="servicio">Servicio</option>
+    </select>
+
+    <label for="descripcionBien">Descripción:</label>
+    <textarea id="descripcionBien" name="descripcionBien" rows="4"></textarea>
+
+    <label for="tipoComprobante">Tipo de comprobante y número:</label>
+    <select id="tipoComprobante" name="tipoComprobante">
+        <option value="boleta">Boleta</option>
+        <option value="factura">Factura</option>
+        <!-- Agrega más opciones según sea necesario -->
+    </select>
+
+    <label for="numeroComprobante">Número:</label>
+    <input type="text" id="numeroComprobante" name="numeroComprobante">
+
+    <label for="monto">Monto:</label>
+    <input type="text" id="monto" name="monto">
+
+    <label for="pedido">Pedido:</label>
+    <input type="text" id="pedido" name="pedido">
+
+    <h2>¿Qué desea obtener con este reclamo?</h2>
+
+    <label for="accionReclamo">Elija la acción que desea realizar:</label>
+    <select id="accionReclamo" name="accionReclamo">
+        <option value="reembolso">Reembolso</option>
+        <option value="reparacion">Reparación</option>
+        <!-- Agrega más opciones según sea necesario -->
+    </select>
+
+    <h2>Detalle de la Reclamación</h2>
+
+    <label for="detalleReclamo">Detalle del reclamo o queja:</label>
+    <textarea id="detalleReclamo" name="detalleReclamo" rows="6"></textarea>
+
+    <h2>Definiciones</h2>
+
+    <p><strong>Queja:</strong> Disconformidad no relacionada a los productos o servicio, o molestar o descontento con respecto a la atención al público.</p>
+    <p><strong>Reclamo:</strong> Disconformidad relacionada a los productos o servicios.</p>
+
+    <p>La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.</p>
+
+    <button type="submit">Enviar Reclamo</button>
+</form>
+    <div class="footer">
+        <p><a href="terminos_y_condiciones.html">Términos y condiciones</a></p>
+        <p><a href="libro_de_reclamaciones.html">Libro de reclamaciones</a></p>
+        <p><a href="politica_de_privacidad.html">Política de privacidad</a></p>
+        <p><a href="comprobantes_electronicos.html">Comprobantes electrónicos</a></p>
+        <p>Ubicación de la empresa: <a href="ubicacion.html">Ver mapa</a></p>
+        <br>
+        <p>&copy; 2023 Perú Suyuta Riqsiy. Todos los derechos reservados.</p>
+    </div>
+</body>
+</html>
